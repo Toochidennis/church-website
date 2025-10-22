@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
+          <a href="#home" data-page="home" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
           <div class="relative dropdown-container">
             <button
               class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center space-x-1 dropdown-trigger">
@@ -22,25 +22,29 @@
             <div
               class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200/20 opacity-0 invisible transform translate-y-2 transition-all duration-300 ease-out dropdown-menu z-50">
               <div class="py-2">
-                <a href="#"
+                <a href="#parishes" data-page="parishes">
                   class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium">Parishes</a>
-                <a href="https://readdy.ai/home/596364b0-1abe-4f0c-95b0-76ae3006c30d/9fba559a-c304-44a1-a352-98c7a8e11907"
+                <a href="#bishops"
                   data-readdy="true"
+                  data-page="bishops"
                   class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium">Bishops</a>
-                <a href="#"
+                <a href="#clergy"
+                  data-page="clergy"
                   class="block px-4 py-3 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium">Clergy</a>
               </div>
             </div>
           </div>
-          <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">News</a>
-          <a href="https://readdy.ai/home/596364b0-1abe-4f0c-95b0-76ae3006c30d/3913529f-a622-4df2-b7ab-11654b00813b"
+          <a href="#news" data-page="news" class="text-gray-700 hover:text-primary transition-colors font-medium">News</a>
+          <a href="#events"
+            data-page="events"
             data-readdy="true"
             class="text-gray-700 hover:text-primary transition-colors font-medium">Events</a>
-          <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Gallery</a>
-          <a href="https://readdy.ai/home/596364b0-1abe-4f0c-95b0-76ae3006c30d/6c723524-0511-46bf-b16c-b68c3d4bdee4"
+          <a href="#gallery" data-page="gallery" class="text-gray-700 hover:text-primary transition-colors font-medium">Gallery</a>
+          <a href="#about"
+            data-page="about"
             data-readdy="true"
             class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
-          <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
+          <a href="#contact" data-page="contact" class="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
         </div>
         <div class="flex items-center space-x-4">
           <button
@@ -55,4 +59,3 @@
     </div>
   </nav>
 </header>
-<main>

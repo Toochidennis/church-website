@@ -1,7 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Curia';
-include __DIR__ . '/partials/nav.php'; ?>
-
 <section class="hero-bg min-h-[70vh] flex items-center pt-20">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="text-center space-y-8 scroll-reveal">
@@ -958,5 +954,3 @@ include __DIR__ . '/partials/nav.php'; ?>
     });
   });
 </script>
-
-<?php include __DIR__ . '/partials/footer.php'; ?>

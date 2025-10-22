@@ -1,6 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Contact';
-include __DIR__ . '/partials/nav.php'; ?>
 <section class="pt-24 pb-8 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <nav class="text-sm text-gray-500 mb-6 scroll-reveal">
@@ -588,4 +585,3 @@ document.addEventListener('DOMContentLoaded', () => {
   L.marker([7.868,9.777]).addTo(m).bindPopup('Cathedral House');
 });
 </script> -->
-<?php include __DIR__ . '/partials/footer.php'; ?>

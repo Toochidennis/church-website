@@ -1,7 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Events';
-include __DIR__ . '/partials/nav.php'; ?>
-
 <section class="events-hero-bg pt-32 pb-20">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center">
@@ -612,5 +608,3 @@ include __DIR__ . '/partials/nav.php'; ?>
         };
     });
 </script>
-
-<?php include __DIR__ . '/partials/footer.php'; ?>

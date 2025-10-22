@@ -1,9 +1,4 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Parishes';
-include __DIR__ . '/partials/nav.php';
-$parishes = json_decode(file_get_contents(__DIR__ . '/data/parishes.json'), true);
-?>
-<section class="parish-hero-bg min-h-96 flex items-center pt-20" x-data='parishDirectory(<?= json_encode($parishes) ?>)'>
+<section class="parish-hero-bg min-h-96 flex items-center pt-20">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="text-center text-white scroll-reveal">
       <h1 class="font-playfair text-5xl lg:text-6xl font-bold mb-6">
@@ -529,4 +524,3 @@ $parishes = json_decode(file_get_contents(__DIR__ . '/data/parishes.json'), true
     });
   });
 </script> -->
-<?php include __DIR__ . '/partials/footer.php'; ?>

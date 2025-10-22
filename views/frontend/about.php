@@ -1,6 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'About';
-include __DIR__ . '/partials/nav.php'; ?>
 <section class="about-hero-bg min-h-96 flex items-center pt-20">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="text-center text-white scroll-reveal">
@@ -385,5 +382,3 @@ include __DIR__ . '/partials/nav.php'; ?>
     </div>
   </div>
 </section>
-
-<?php include __DIR__ . '/partials/footer.php'; ?>

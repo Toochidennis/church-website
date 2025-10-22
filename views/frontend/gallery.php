@@ -1,7 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Gallery';
-include __DIR__ . '/partials/nav.php';
-?>
 <section class="pt-24 pb-8 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <nav class="text-sm text-gray-500 mb-6 scroll-reveal">
@@ -468,5 +464,3 @@ include __DIR__ . '/partials/nav.php';
     });
   });
 </script>
-
-<?php include __DIR__ . '/partials/footer.php'; ?>

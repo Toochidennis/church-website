@@ -1,6 +1,3 @@
-<?php include __DIR__ . '/partials/head.php';
-$active = 'Home';
-include __DIR__ . '/partials/nav.php'; ?>
 <section class="hero-bg min-h-screen flex items-center pt-20 pb-10">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -350,5 +347,3 @@ include __DIR__ . '/partials/nav.php'; ?>
     });
   });
 </script>
-
-<?php include __DIR__ . '/partials/footer.php'; ?>

@@ -1,4 +1,5 @@
 <?php
+
 $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), true);
 ?>
 <!doctype html>
@@ -432,7 +433,6 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       });
     });
   </script>
-
 </head>
 
 <body class="font-inter text-gray-800" style="background-color: #f9f7f3;">
