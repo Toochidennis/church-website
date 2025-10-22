@@ -178,7 +178,53 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
     }
   </style>
 
-  <script defer src="/assets/js/app.js"></script>
+  <style>
+    .contact-card {
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(31, 61, 43, 0.15);
+    }
+
+    .form-input {
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      border-color: #1f3d2b;
+      box-shadow: 0 0 0 3px rgba(31, 61, 43, 0.1);
+    }
+
+    .custom-select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+    }
+
+    .staff-card {
+      transition: all 0.3s ease;
+    }
+
+    .staff-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(31, 61, 43, 0.1);
+    }
+
+    .department-card {
+      transition: all 0.3s ease;
+    }
+
+    .department-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(31, 61, 43, 0.1);
+    }
+  </style>
+
+  <!-- <script defer src="/assets/js/app.js"></script> -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -190,6 +236,25 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       "url": "https://diocese.example",
       "image": "/assets/img/hero.jpg"
     }
+  </script>
+
+  <script id="scroll-reveal">
+    document.addEventListener('DOMContentLoaded', function() {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+      document.querySelectorAll('.scroll-reveal').forEach(el => {
+        observer.observe(el);
+      });
+    });
   </script>
 
   <script id="navbar-scroll">
