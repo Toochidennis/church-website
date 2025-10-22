@@ -13,9 +13,6 @@
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Home</a>
-          <a href="https://readdy.ai/home/596364b0-1abe-4f0c-95b0-76ae3006c30d/6c723524-0511-46bf-b16c-b68c3d4bdee4"
-            data-readdy="true"
-            class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
           <div class="relative dropdown-container">
             <button
               class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center space-x-1 dropdown-trigger">
@@ -40,6 +37,9 @@
             data-readdy="true"
             class="text-gray-700 hover:text-primary transition-colors font-medium">Events</a>
           <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Gallery</a>
+          <a href="https://readdy.ai/home/596364b0-1abe-4f0c-95b0-76ae3006c30d/6c723524-0511-46bf-b16c-b68c3d4bdee4"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
           <a href="#" class="text-gray-700 hover:text-primary transition-colors font-medium">Contact</a>
         </div>
         <div class="flex items-center space-x-4">
@@ -55,4 +55,4 @@
     </div>
   </nav>
 </header>
-<main class="pt-20">
+<main>

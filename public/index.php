@@ -1,7 +1,7 @@
 <?php include __DIR__ . '/partials/head.php';
 $active = 'Home';
 include __DIR__ . '/partials/nav.php'; ?>
-<section class="hero-bg min-h-screen flex items-center pt-20">
+<section class="hero-bg min-h-screen flex items-center pt-20 pb-10">
   <div class="max-w-7xl mx-auto px-6 w-full">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div class="space-y-8 scroll-reveal">
@@ -314,21 +314,7 @@ include __DIR__ . '/partials/nav.php'; ?>
     });
   });
 </script>
-<script id="navbar-scroll">
-  document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('nav');
-    let lastScrollY = window.scrollY;
-    window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > 100) {
-        navbar.style.transform = currentScrollY > lastScrollY ? 'translateY(-100%)' : 'translateY(0)';
-      } else {
-        navbar.style.transform = 'translateY(0)';
-      }
-      lastScrollY = currentScrollY;
-    });
-  });
-</script>
+
 <script id="dropdown-functionality">
   document.addEventListener('DOMContentLoaded', function() {
     const dropdownContainers = document.querySelectorAll('.dropdown-container');

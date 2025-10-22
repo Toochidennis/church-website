@@ -58,7 +58,7 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-  <link rel="stylesheet" href="/assets/css/custom.css">
+  <!-- <link rel="stylesheet" href="/assets/css/custom.css"> -->
   <style>
     :where([class^="ri-"])::before {
       content: "\f3c2";
@@ -119,39 +119,95 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       background: rgba(255, 255, 255, 0.95);
     }
   </style>
-  </修改前>
-  <修改后>
+  <style>
     .navbar-blur {
-    backdrop-filter: blur(10px);
-    background: rgba(249, 247, 243, 0.9);
+      backdrop-filter: blur(10px);
+      background: rgba(249, 247, 243, 0.9);
     }
-    .dropdown-container:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    }
-    .dropdown-container:hover .dropdown-trigger i {
-    transform: rotate(180deg);
-    }
-    .dropdown-menu {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.95);
-    }
-    </style>
 
-    <script defer src="/assets/js/app.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CatholicChurch",
-        "name": "Catholic Diocese of Wukari",
-        "address": "<?= addslashes($settings['address']) ?>",
-        "telephone": "<?= addslashes($settings['contact_phone']) ?>",
-        "email": "<?= addslashes($settings['contact_email']) ?>",
-        "url": "https://diocese.example",
-        "image": "/assets/img/hero.jpg"
-      }
-    </script>
+    .dropdown-container:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-container:hover .dropdown-trigger i {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+  </style>
+
+  <style>
+    .about-hero-bg {
+      background-image: linear-gradient(135deg, rgba(31, 61, 43, 0.8) 0%, rgba(31, 61, 43, 0.6) 100%), url('https://readdy.ai/api/search-image?query=majestic%20Catholic%20cathedral%20interior%20with%20vaulted%20ceilings%20and%20stained%20glass%20windows%2C%20golden%20light%20streaming%20through%20colorful%20glass%2C%20gothic%20architecture%2C%20peaceful%20sanctuary%20with%20wooden%20pews%2C%20sacred%20atmosphere%2C%20religious%20grandeur%2C%20spiritual%20space%20with%20stone%20pillars%20and%20arches&width=1920&height=800&seq=about-hero&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      background: #c5a559;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 0 3px #c5a559;
+    }
+
+    .timeline-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 1.5rem;
+      width: 2px;
+      height: calc(100% - 1rem);
+      background: #e5e7eb;
+    }
+  </style>
+
+  <script defer src="/assets/js/app.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CatholicChurch",
+      "name": "Catholic Diocese of Wukari",
+      "address": "<?= addslashes($settings['address']) ?>",
+      "telephone": "<?= addslashes($settings['contact_phone']) ?>",
+      "email": "<?= addslashes($settings['contact_email']) ?>",
+      "url": "https://diocese.example",
+      "image": "/assets/img/hero.jpg"
+    }
+  </script>
+
+  <script id="navbar-scroll">
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('nav');
+      let lastScrollY = window.scrollY;
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > 100) {
+          navbar.style.transform = currentScrollY > lastScrollY ? 'translateY(-100%)' : 'translateY(0)';
+        } else {
+          navbar.style.transform = 'translateY(0)';
+        }
+        lastScrollY = currentScrollY;
+      });
+    });
+  </script>
+
 </head>
 
 <body class="font-inter text-gray-800" style="background-color: #f9f7f3;">
