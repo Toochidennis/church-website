@@ -224,6 +224,75 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
     }
   </style>
 
+  <style>
+    .news-hero-bg {
+      background-image: linear-gradient(135deg, rgba(31, 61, 43, 0.8) 0%, rgba(31, 61, 43, 0.6) 100%), url('https://readdy.ai/api/search-image?query=Catholic%20church%20news%20and%20communication%20center%2C%20modern%20diocesan%20office%20building%20with%20cross%20on%20top%2C%20Nigerian%20Catholic%20diocese%20headquarters%2C%20peaceful%20administrative%20building%20surrounded%20by%20green%20landscaping%2C%20professional%20church%20communication%20facility%2C%20welcoming%20entrance%20with%20steps&width=1920&height=600&seq=news-hero&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .category-active {
+      background: #1f3d2b;
+      color: white;
+    }
+
+    .news-card {
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(31, 61, 43, 0.1);
+    }
+
+    .search-focus {
+      border-color: #1f3d2b;
+      box-shadow: 0 0 0 3px rgba(31, 61, 43, 0.1);
+    }
+  </style>
+
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .photo-item {
+      break-inside: avoid;
+      margin-bottom: 1.5rem;
+    }
+
+    .photo-hover {
+      transition: all 0.3s ease;
+    }
+
+    .photo-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(31, 61, 43, 0.15);
+    }
+
+    .filter-active {
+      background: #1f3d2b !important;
+      color: white !important;
+    }
+  </style>
   <!-- <script defer src="/assets/js/app.js"></script> -->
   <script type="application/ld+json">
     {
