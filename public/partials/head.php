@@ -293,6 +293,66 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       color: white !important;
     }
   </style>
+
+  <style>
+    .events-hero-bg {
+      background-image: linear-gradient(135deg, rgba(249, 247, 243, 0.95) 0%, rgba(31, 61, 43, 0.1) 100%), url('https://readdy.ai/api/search-image?query=beautiful%20church%20calendar%20with%20religious%20events%20marked%2C%20liturgical%20calendar%20on%20wooden%20desk%2C%20spiritual%20planning%2C%20sacred%20schedule%2C%20religious%20organization%2C%20faith%20community%20events%2C%20warm%20lighting%2C%20peaceful%20atmosphere%2C%20traditional%20Catholic%20calendar&width=1920&height=800&seq=events-hero&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .calendar-day {
+      transition: all 0.2s ease;
+    }
+
+    .calendar-day:hover {
+      background-color: #f3f4f6;
+    }
+
+    .calendar-day.has-event {
+      background-color: #1f3d2b;
+      color: white;
+    }
+
+    .calendar-day.has-event:hover {
+      background-color: #2d5a3d;
+    }
+
+    .filter-active {
+      background-color: #1f3d2b;
+      color: white;
+    }
+
+    .event-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .event-dot.masses {
+      background-color: #c5a559;
+    }
+
+    .event-dot.youth {
+      background-color: #3b82f6;
+    }
+
+    .event-dot.outreach {
+      background-color: #ef4444;
+    }
+
+    .event-dot.education {
+      background-color: #10b981;
+    }
+
+    .event-dot.retreats {
+      background-color: #8b5cf6;
+    }
+
+    .event-dot.celebrations {
+      background-color: #f59e0b;
+    }
+  </style>
   <!-- <script defer src="/assets/js/app.js"></script> -->
   <script type="application/ld+json">
     {
