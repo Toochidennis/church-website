@@ -373,6 +373,18 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       background-position: center;
     }
   </style>
+  <style>
+    .filter-button.active {
+      background: #1f3d2b;
+      color: white;
+    }
+
+    .clergy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+  </style>
   <!-- <script defer src="/assets/js/app.js"></script> -->
   <script type="application/ld+json">
     {
