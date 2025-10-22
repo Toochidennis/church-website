@@ -353,6 +353,26 @@ $settings = json_decode(file_get_contents(__DIR__ . '/../data/settings.json'), t
       background-color: #f59e0b;
     }
   </style>
+
+  <style>
+    .parish-hero-bg {
+      background-image: linear-gradient(135deg, rgba(31, 61, 43, 0.8) 0%, rgba(31, 61, 43, 0.6) 100%), url('https://readdy.ai/api/search-image?query=beautiful%20Catholic%20church%20exterior%20with%20bell%20tower%20and%20cross%20on%20top%2C%20peaceful%20Nigerian%20countryside%20setting%2C%20traditional%20church%20architecture%2C%20red%20brick%20construction%2C%20spiritual%20sanctuary%20surrounded%20by%20green%20landscape%2C%20African%20Catholic%20parish%20church%20with%20welcoming%20entrance&width=1920&height=600&seq=parishes-hero&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .parish-filter-active {
+      background: #1f3d2b;
+      color: white;
+    }
+
+    .map-container {
+      background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
   <!-- <script defer src="/assets/js/app.js"></script> -->
   <script type="application/ld+json">
     {
