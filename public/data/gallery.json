@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "src": "img/gallery1.jpg",
+    "alt": "Cathedral interior",
+    "caption": "Light through stained glass"
+  },
+  {
+    "id": 2,
+    "src": "img/gallery2.jpg",
+    "alt": "Procession",
+    "caption": "Palm Sunday procession"
+  },
+  {
+    "id": 3,
+    "src": "img/gallery3.jpg",
+    "alt": "Bishop at altar",
+    "caption": "Eucharistic celebration"
+  }
+]

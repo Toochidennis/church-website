@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Pastoral Affairs",
+    "lead": "Rev. Fr. John Bala",
+    "email": "[email\u00a0protected]",
+    "phone": "+2348123456789",
+    "description": "Coordinates pastoral activities across the diocese.",
+    "icon": "church"
+  },
+  {
+    "id": 2,
+    "name": "Education & Catechesis",
+    "lead": "Sr. Mary Aondo",
+    "email": "[email\u00a0protected]",
+    "phone": "+2348091234567",
+    "description": "Faith formation, catechism, and schools.",
+    "icon": "book"
+  },
+  {
+    "id": 3,
+    "name": "Social Communications",
+    "lead": "Mr. Terkuma Iorlamen",
+    "email": "[email\u00a0protected]",
+    "phone": "+2347012345678",
+    "description": "Media, website, and publications.",
+    "icon": "megaphone"
+  }
+]

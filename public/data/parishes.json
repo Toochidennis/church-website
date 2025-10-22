@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "St. Peter's Parish",
+    "deanery": "Wukari Central",
+    "address": "Cathedral Road, Wukari",
+    "lat": 7.868,
+    "lng": 9.777,
+    "priest": "Fr. Joseph A.",
+    "phone": "+2348030000001"
+  },
+  {
+    "id": 2,
+    "name": "St. Theresa's Parish",
+    "deanery": "Ibi",
+    "address": "Main Street, Ibi",
+    "lat": 7.999,
+    "lng": 9.452,
+    "priest": "Fr. Michael O.",
+    "phone": "+2348030000002"
+  },
+  {
+    "id": 3,
+    "name": "St. Michael's Parish",
+    "deanery": "Takum",
+    "address": "Old Market Rd, Takum",
+    "lat": 7.27,
+    "lng": 9.983,
+    "priest": "Fr. Matthew T.",
+    "phone": "+2348030000003"
+  }
+]

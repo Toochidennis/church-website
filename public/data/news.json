@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Diocesan Jubilee Mass",
+    "excerpt": "Celebrating a decade of grace in Wukari.",
+    "content": "Full text of the Jubilee Mass homily and reflections.",
+    "image": "img/news1.jpg",
+    "date": "2025-09-24",
+    "tags": [
+      "Mass",
+      "Celebration"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Youth Retreat 2025",
+    "excerpt": "A weekend of prayer, learning, and service.",
+    "content": "Schedule, speakers, and registration details for the youth retreat.",
+    "image": "img/news2.jpg",
+    "date": "2025-08-15",
+    "tags": [
+      "Youth",
+      "Retreat"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "New Parish Centre Blessed",
+    "excerpt": "Bishop blesses St. Theresa's Parish Centre.",
+    "content": "Photo highlights and testimonies from parishioners.",
+    "image": "img/news3.jpg",
+    "date": "2025-07-30",
+    "tags": [
+      "Parish",
+      "Community"
+    ]
+  }
+]

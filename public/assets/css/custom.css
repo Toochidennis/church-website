@@ -1,0 +1,4 @@
+.card{ @apply bg-white/70 rounded-2xl p-5 border border-primary/10 shadow-sm hover:shadow-md transition-shadow; }
+.reveal{ opacity:0; transform: translateY(12px); transition: all .6s ease; }
+.reveal.visible{ opacity:1; transform: none; }
+:focus-visible{ outline: 3px solid var(--tw-color-accent); outline-offset: 2px; }
