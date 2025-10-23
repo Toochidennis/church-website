@@ -31,11 +31,11 @@
       <div>
         <h4 class="font-playfair text-lg font-semibold mb-6">Quick Links</h4>
         <ul class="space-y-3">
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Parishes</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Ministries</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Events</a></li>
-          <li><a href="#" class="text-gray-300 hover:text-white transition-colors">News</a></li>
+          <li><a href="#parishes" data-page="parishes" class="text-gray-300 hover:text-white transition-colors">Parishes</a></li>
+          <li><a href="#gallery" data-page="gallery" class="text-gray-300 hover:text-white transition-colors">Galleries</a></li>
+          <li><a href="#events" data-page="events" class="text-gray-300 hover:text-white transition-colors">Events</a></li>
+          <li><a href="#news" data-page="news" class="text-gray-300 hover:text-white transition-colors">News</a></li>
+          <li><a href="#about" data-page="about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
         </ul>
       </div>
       <div>
